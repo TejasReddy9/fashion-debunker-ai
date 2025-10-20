@@ -129,8 +129,8 @@ def create_gradio_interface(app):
         gr.Markdown("### Example Images")
         with gr.Row():
             # Display the images directly
-            gr.Image(value="examples/test-1.png", label="Example 1", show_label=True, scale=1)
-            gr.Image(value="examples/test-2.png", label="Example 2", show_label=True, scale=1)
+            gr.Image(value="examples/G3rZNbcXoAAiAGx.jpg", label="Example 1", show_label=True, scale=1)
+            gr.Image(value="examples/G3pqM8BWUAA9F1z.jpg", label="Example 2", show_label=True, scale=1)
         
         # Example image buttons
         with gr.Row():
@@ -241,3 +241,4 @@ if __name__ == "__main__":
     except Exception as e:
 
         print(f"Error starting the application: {str(e)}") 
+
