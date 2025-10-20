@@ -131,7 +131,6 @@ def create_gradio_interface(app):
             # Display the images directly
             gr.Image(value="examples/test-1.png", label="Example 1", show_label=True, scale=1)
             gr.Image(value="examples/test-2.png", label="Example 2", show_label=True, scale=1)
-            gr.Image(value="examples/test-3.png", label="Example 3", show_label=True, scale=1)
         
         # Example image buttons
         with gr.Row():
@@ -240,4 +239,5 @@ if __name__ == "__main__":
             share=False  # Set to False if you don't want to create a public link
         )
     except Exception as e:
+
         print(f"Error starting the application: {str(e)}") 
