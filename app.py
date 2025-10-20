@@ -136,7 +136,6 @@ def create_gradio_interface(app):
         with gr.Row():
             example1_btn = gr.Button("Use Example 1")
             example2_btn = gr.Button("Use Example 2")
-            example3_btn = gr.Button("Use Example 3")
         
         with gr.Row():
             with gr.Column(scale=1):
@@ -196,16 +195,6 @@ def create_gradio_interface(app):
             outputs=status
         )
         
-        example3_btn.click(
-            fn=lambda: "examples/test-3.png", 
-            inputs=None, 
-            outputs=image_input
-        ).then(
-            fn=lambda: "Example 3 loaded. Click 'Analyze Style' to process.",
-            inputs=None,
-            outputs=status
-        )
-        
         # Information about the application
         gr.Markdown(
             """
@@ -241,4 +230,5 @@ if __name__ == "__main__":
     except Exception as e:
 
         print(f"Error starting the application: {str(e)}") 
+
 
